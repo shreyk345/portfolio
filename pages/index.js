@@ -40,7 +40,6 @@ const SECTION_STYLE = {
   display:    'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  scrollSnapAlign: 'start',
 }
 
 export default function Home({ featuredCaseStudies, playImages }) {
@@ -165,23 +164,23 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
           <h2 style={{ ...HEADING_STYLE, position:'relative', zIndex:2 }}>Work</h2>
 
-          <div style={{ display:'flex', gap:16, flexWrap:'wrap', position:'relative', zIndex:2, alignItems:'flex-end' }}>
+          <div style={{ display:'flex', gap:16, position:'relative', zIndex:2, alignItems:'flex-start', width:'65%' }}>
             {featuredCaseStudies.map((cs, i) => (
-              <div key={cs.slug} style={{ flex:'0 0 auto' }}>
-                <CaseFileCard {...cs} index={i} />
+              <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0 }}>
+                <CaseFileCard {...cs} index={i} fullWidth />
               </div>
             ))}
           </div>
 
-          <div style={{ marginTop:32, position:'relative', zIndex:2 }}>
+          <div style={{ marginTop:24, position:'relative', zIndex:2 }}>
             <span
               style={{
                 fontFamily:   'Lato, sans-serif',
-                fontSize:     16,
-                color:        'var(--bg)',
-                background:   'var(--text)',
+                fontSize:     14,
+                color:        'white',
+                background:   '#64CEBB',
                 cursor:       'pointer',
-                padding:      '10px 22px',
+                padding:      '8px 20px',
                 borderRadius: 9999,
                 display:      'inline-block',
                 fontWeight:   600,
@@ -200,7 +199,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
         {/* ═══ PLAY ══════════════════════════════════════════════════════ */}
         <section id="play" className="page-section"
-          style={{ ...SECTION_STYLE, paddingTop: 100, paddingBottom: 0 }}>
+          style={{ ...SECTION_STYLE, paddingTop: 100, paddingBottom: 0, scrollSnapAlign: 'none', minHeight: 'auto' }}>
 
           {/* Heading row: "Play" + treble staff at same height */}
           <div style={{ marginBottom:16, marginRight:'calc(-1 * var(--page-px))' }}>
