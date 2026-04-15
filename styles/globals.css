@@ -9,7 +9,7 @@
   --text:        #000000;
   --nav-bg:      rgba(239, 240, 233, 0.92);
   --card-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  --page-px:     100px;   /* standard horizontal padding for all sections */
+  --page-px:     75px;   /* standard horizontal padding for all sections */
 }
 
 .dark {
@@ -36,6 +36,7 @@
 /* ─── Base ───────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   font-size: 16px;
 }
 
@@ -47,13 +48,6 @@ body {
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-}
-
-/* Scale wrapper — makes deployed site match 75% browser zoom */
-#__next {
-  transform: scale(0.75);
-  transform-origin: top left;
-  width: 133.333%;
 }
 
 /* ─── Typewriter cursor ──────────────────────────────────── */

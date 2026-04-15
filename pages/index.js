@@ -19,15 +19,15 @@ import { getPlayImages }    from '../lib/play-images'
 // Shared typography constants for clean visual hierarchy across all sections
 const HEADING_STYLE = {
   fontFamily:   '"Reenie Beanie", cursive',
-  fontSize:     'clamp(70px, 7vw, 100px)',
+  fontSize:     'clamp(52px, 5.25vw, 75px)',
   color:        'var(--text)',
   lineHeight:   1,
   margin:       0,
-  marginBottom: 24,
+  marginBottom: 18,
 }
 const BODY_STYLE = {
   fontFamily: 'Lato, sans-serif',
-  fontSize:   22,
+  fontSize:   16,
   lineHeight: 1.75,
   color:      'var(--text)',
   opacity:    0.85,
@@ -35,8 +35,8 @@ const BODY_STYLE = {
 }
 const SECTION_STYLE = {
   minHeight:  '100vh',
-  paddingTop: 80,
-  paddingBottom: 80,
+  paddingTop: 60,
+  paddingBottom: 60,
   display:    'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -90,13 +90,13 @@ export default function Home({ featuredCaseStudies, playImages }) {
                 <div style={{ whiteSpace: 'nowrap', lineHeight: 1.1 }}>
                   <span style={{
                     fontFamily: 'Lato, sans-serif',
-                    fontSize:   'clamp(28px, 3.5vw, 50px)',
+                    fontSize:   'clamp(20px, 2.6vw, 38px)',
                     fontWeight: 400,
                     color:      'var(--text)',
                   }}>Hi! I'm </span>
                   <span style={{
                     fontFamily: '"Reenie Beanie", cursive',
-                    fontSize:   'clamp(60px, 6.5vw, 92px)',
+                    fontSize:   'clamp(45px, 4.9vw, 70px)',
                     color:      '#64CEBB',
                   }}>Shreya</span>
                 </div>
@@ -104,7 +104,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
                 <div style={{ lineHeight: 0.9 }}>
                   <span style={{
                     fontFamily: '"Reenie Beanie", cursive',
-                    fontSize:   'clamp(60px, 6.5vw, 92px)',
+                    fontSize:   'clamp(45px, 4.9vw, 70px)',
                     color:      '#64CEBB',
                   }}>Krishnamurthy.</span>
                 </div>

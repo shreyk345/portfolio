@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 // Each nav label flashes a different accent color on hover
 const NAV_COLORS = {
-  work:   '#FE602F',
-  play:   '#64CEBB',
-  about:  '#E6C7EB',
-  resume: '#F5C645',
+  Work:   '#FE602F',
+  Play:   '#64CEBB',
+  About:  '#E6C7EB',
+  Resume: '#F5C645',
 }
 
 // Cloud SVG icon (matches the landing section cloud shape)
@@ -59,10 +59,10 @@ export default function Navbar() {
   }
 
   const navItems = [
-    { label: 'work',   action: () => goTo('work') },
-    { label: 'play',   action: () => goTo('play') },
-    { label: 'about',  action: () => goTo('about') },
-    { label: 'resume', action: () => window.open('/resume.pdf', '_blank') },
+    { label: 'Work',   action: () => goTo('work') },
+    { label: 'Play',   action: () => goTo('play') },
+    { label: 'About',  action: () => goTo('about') },
+    { label: 'Resume', action: () => window.open('/resume.pdf', '_blank') },
   ]
 
   return (
@@ -90,7 +90,7 @@ export default function Navbar() {
               onMouseLeave={() => setHoveredNav(null)}
               style={{
                 fontFamily: 'Lato, sans-serif',
-                fontSize: 18,
+                fontSize: 14,
                 fontWeight: 400,
                 background: 'none', border: 'none', cursor: 'pointer',
                 color: hoveredNav === label ? NAV_COLORS[label] : 'var(--text)',
