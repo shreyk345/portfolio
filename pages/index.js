@@ -54,7 +54,6 @@ export default function Home({ featuredCaseStudies, playImages }) {
       <Head>
         <title>Shreya Krishnamurthy — Portfolio</title>
         <meta name="description" content="UX researcher, designer, developer and artist." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <Navbar />
@@ -75,6 +74,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
               overflow:      'hidden',
               gap:           40,
               flexWrap:      'wrap',
+              boxSizing:     'border-box',
             }}
           >
             <EnvironmentLayer />
