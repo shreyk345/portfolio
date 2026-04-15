@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Lato:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Variables ─────────────────────────────────────── */
+:root {
+  --bg:          #eff0e9;
+  --text:        #000000;
+  --nav-bg:      rgba(239, 240, 233, 0.92);
+  --card-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --page-px:     100px;   /* standard horizontal padding for all sections */
+}
+
+.dark {
+  --bg:      #0d0d0b;
+  --text:    #eff0e9;
+  --nav-bg:  rgba(13, 13, 11, 0.92);
+  --card-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+/* Standard section padding — use this class on every section */
+.page-section {
+  padding-left:  var(--page-px);
+  padding-right: var(--page-px);
+}
+
+/* Responsive: shrink padding on smaller screens */
+@media (max-width: 900px) {
+  :root { --page-px: 48px; }
+}
+@media (max-width: 600px) {
+  :root { --page-px: 24px; }
+}
+
+/* ─── Base ───────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* ─── Typewriter cursor ──────────────────────────────────── */
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #FE602F;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ─── Dragon animation ───────────────────────────────────── */
+/* Dragon positioned at left:0. translateX(110vw) = off right edge.
+   Fades in as it enters, hovers near castle tip, then exits right. */
+@keyframes dragonFly {
+  0%        { transform: translateX(110vw); opacity: 0; }
+  5%        { transform: translateX(95vw);  opacity: 1; }
+  42%       { transform: translateX(30vw);  opacity: 1; }
+  58%       { transform: translateX(30vw);  opacity: 1; }
+  95%       { transform: translateX(95vw);  opacity: 1; }
+  100%      { transform: translateX(110vw); opacity: 0; }
+}
+
+.dragon-animate {
+  animation: dragonFly 12s ease-in-out infinite;
+}
+
+/* ─── Cloud animation (light mode) ──────────────────────── */
+/* Clouds start at translateX(110vw) relative to their own position (left:0)
+   and move to translateX(-30vw) so they cross the full screen.
+   Clouds are positioned at left: 0 with varying animationDelay to stagger them. */
+@keyframes cloudDrift {
+  from { transform: translateX(110vw); }
+  to   { transform: translateX(-30vw); }
+}
+
+.cloud-drift {
+  animation: cloudDrift linear infinite;
+}
+
+/* ─── Star animation (dark mode) ────────────────────────── */
+@keyframes starSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.star-spin {
+  animation: starSpin linear infinite;
+}
+
+/* ─── Music staff scroll ─────────────────────────────────── */
+@keyframes staffScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.staff-scroll {
+  animation: staffScroll 14s linear infinite;
+}
+
+/* ─── Saturn ring orbits ─────────────────────────────────── */
+@keyframes orbit1 { from { transform: rotate(0deg)   translateX(var(--r)) rotate(0deg);   } to { transform: rotate(360deg)  translateX(var(--r)) rotate(-360deg);  } }
+@keyframes orbit2 { from { transform: rotate(90deg)  translateX(var(--r)) rotate(-90deg); } to { transform: rotate(450deg)  translateX(var(--r)) rotate(-450deg); } }
+@keyframes orbit3 { from { transform: rotate(180deg) translateX(var(--r)) rotate(-180deg);} to { transform: rotate(540deg)  translateX(var(--r)) rotate(-540deg); } }
+@keyframes orbit4 { from { transform: rotate(270deg) translateX(var(--r)) rotate(-270deg);} to { transform: rotate(630deg)  translateX(var(--r)) rotate(-630deg); } }
+
+/* ─── Hover: case card ───────────────────────────────────── */
+.case-card {
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.case-card:hover {
+  transform: translateY(-4px) scale(1.015);
+  filter: brightness(1.06);
+}
+
+/* ─── Explore link → button ──────────────────────────────── */
+.explore-link {
+  display: inline-block;
+  border-bottom: 2px solid #F5C645;
+  padding-bottom: 2px;
+  transition: background 0.2s, padding 0.2s, border-radius 0.2s;
+  cursor: pointer;
+}
+.explore-link:hover {
+  background: #F5C645;
+  color: #000 !important;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  border-bottom: 2px solid #F5C645;
+}
+
+/* ─── Gallery item hover ─────────────────────────────────── */
+.gallery-item {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+/* ─── Modal ──────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .dragon-animate,
+  .cloud-drift,
+  .star-spin,
+  .staff-scroll {
+    animation: none !important;
+  }
+}
