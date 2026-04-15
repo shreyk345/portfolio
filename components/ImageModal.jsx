@@ -88,7 +88,7 @@ export default function ImageModal({ src, alt, title, description, onClose }) {
         <div style={{ flex: 1, minWidth: 220, maxWidth: 360 }}>
           <h2 style={{
             fontFamily:   '"Reenie Beanie", cursive',
-            fontSize:      56,
+            fontSize:      50,
             color:         'white',
             marginBottom:  20,
             lineHeight:    1.05,
@@ -98,7 +98,7 @@ export default function ImageModal({ src, alt, title, description, onClose }) {
           {description && (
             <p style={{
               fontFamily: 'Lato, sans-serif',
-              fontSize:    22,
+              fontSize:    18,
               lineHeight:  1.75,
               color:      'rgba(255,255,255,0.80)',
               margin:      0,
