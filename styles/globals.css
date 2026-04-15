@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  font-size: 16px;
 }
 
 body {
@@ -45,6 +46,8 @@ body {
   font-family: 'Lato', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* ─── Typewriter cursor ──────────────────────────────────── */
