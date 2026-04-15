@@ -164,7 +164,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
           <h2 style={{ ...HEADING_STYLE, position:'relative', zIndex:2 }}>Work</h2>
 
-          <div style={{ display:'flex', gap:24, position:'relative', zIndex:2, alignItems:'flex-start', width:'75%' }}>
+          <div style={{ display:'flex', gap:36, position:'relative', zIndex:2, alignItems:'flex-start', width:'75%' }}>
             {featuredCaseStudies.map((cs, i) => (
               <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0 }}>
                 <CaseFileCard {...cs} index={i} fullWidth />
