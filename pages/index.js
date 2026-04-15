@@ -179,7 +179,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
                 fontFamily:   'Lato, sans-serif',
                 fontSize:     16,
                 color:        'var(--bg)',
-                background:   'var(--text)',
+                background:   '#64CEBB',
                 cursor:       'pointer',
                 padding:      '10px 22px',
                 borderRadius: 9999,

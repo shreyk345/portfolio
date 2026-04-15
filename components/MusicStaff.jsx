@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import LetterBlock from './LetterBlock'
 
 const LINES    = 5
-const LINE_GAP = 28     // bigger gap between lines
-const STAFF_H  = (LINES - 1) * LINE_GAP   // 112px
-const BLK      = 34    // LetterBlock note head size
-const STEM_LEN = 68    // taller stem
+const LINE_GAP = 16     // 21 * 0.75
+const STAFF_H  = (LINES - 1) * LINE_GAP
+const BLK      = 20    // 26 * 0.75
+const STEM_LEN = 38    // 51 * 0.75
 const LOOP_W   = 1600
 const SPEED    = 36
 

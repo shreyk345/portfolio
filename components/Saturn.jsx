@@ -268,7 +268,7 @@ export default function Saturn() {
     function measure() {
       const section = ref.current?.closest('section')
       if (!section) return
-      setDims({ R: section.offsetHeight * 0.70 / 2 })
+      setDims({ R: section.offsetHeight * 0.39 / 2 })
     }
     measure()
     window.addEventListener('resize', measure)
@@ -278,7 +278,7 @@ export default function Saturn() {
   if (!dims) return <div ref={ref} style={{ position:'absolute', inset:0, pointerEvents:'none' }} />
 
   const { R }  = dims
-  const BLOCK  = Math.max(44, Math.round(R * 0.17))  // bigger: was 0.14
+  const BLOCK  = Math.max(33, Math.round(R * 0.13))  // scaled down from 0.17/44
   const maxRx  = R * RING_SCALES[RING_SCALES.length - 1]
 
   const pad  = BLOCK + 4

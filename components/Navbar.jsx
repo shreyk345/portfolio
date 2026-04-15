@@ -59,10 +59,10 @@ export default function Navbar() {
   }
 
   const navItems = [
-    { label: 'Work',   action: () => goTo('work') },
-    { label: 'Play',   action: () => goTo('play') },
-    { label: 'About',  action: () => goTo('about') },
-    { label: 'Resume', action: () => window.open('/resume.pdf', '_blank') },
+    { label: 'work',   action: () => goTo('work') },
+    { label: 'play',   action: () => goTo('play') },
+    { label: 'about',  action: () => goTo('about') },
+    { label: 'resume', action: () => window.open('/resume.pdf', '_blank') },
   ]
 
   return (
