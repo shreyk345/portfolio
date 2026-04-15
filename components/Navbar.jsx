@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 // Each nav label flashes a different accent color on hover
 const NAV_COLORS = {
-  Work:   '#FE602F',
-  Play:   '#64CEBB',
-  About:  '#E6C7EB',
-  Resume: '#F5C645',
+  work:   '#FE602F',
+  play:   '#64CEBB',
+  about:  '#E6C7EB',
+  resume: '#F5C645',
 }
 
 // Cloud SVG icon (matches the landing section cloud shape)

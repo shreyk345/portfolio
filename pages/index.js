@@ -165,9 +165,9 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
           <h2 style={{ ...HEADING_STYLE, position:'relative', zIndex:2 }}>Work</h2>
 
-          <div style={{ display:'flex', gap:36, flexWrap:'wrap', position:'relative', zIndex:2, alignItems:'flex-end' }}>
+          <div style={{ display:'flex', gap:16, flexWrap:'wrap', position:'relative', zIndex:2, alignItems:'flex-end' }}>
             {featuredCaseStudies.map((cs, i) => (
-              <div key={cs.slug} style={{ flex:'1 1 320px', maxWidth:420 }}>
+              <div key={cs.slug} style={{ flex:'0 0 auto' }}>
                 <CaseFileCard {...cs} index={i} />
               </div>
             ))}
@@ -179,7 +179,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
                 fontFamily:   'Lato, sans-serif',
                 fontSize:     16,
                 color:        'var(--bg)',
-                background:   '#64CEBB',
+                background:   'var(--text)',
                 cursor:       'pointer',
                 padding:      '10px 22px',
                 borderRadius: 9999,
@@ -254,7 +254,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
         </section>
 
         {/* ═══ ABOUT ═════════════════════════════════════════════════════ */}
-        <section id="about" className="page-section" style={{ ...SECTION_STYLE }}>
+        <section id="about" className="page-section" style={{ ...SECTION_STYLE, scrollSnapAlign: 'none', minHeight: 'auto', paddingBottom: 80 }}>
           <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center' }}>
             <div>
               <h2 style={{ ...HEADING_STYLE }}>

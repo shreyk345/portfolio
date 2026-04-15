@@ -58,7 +58,7 @@ export default function Typewriter() {
       <span
         style={{
           fontFamily:  'Lato, sans-serif',
-          fontSize:    'clamp(22px, 2.8vw, 36px)',
+          fontSize:    'clamp(16px, 2.8vw, 26px)',
           fontWeight:  400,
           color:       color,
           transition:  'color 0.3s ease',
