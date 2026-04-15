@@ -59,11 +59,8 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
       <Navbar />
 
-      {/* Scroll-snap container wrapping all sections */}
-      <div style={{ height:'100vh', overflowY:'scroll', scrollSnapType:'y mandatory' }}>
-
-        {/* ═══ LANDING ═══════════════════════════════════════════════════ */}
-        <div style={{ position:'relative', height:'100vh', overflow:'hidden', scrollSnapAlign:'start', flexShrink:0 }}>
+      {/* ═══ LANDING ═══════════════════════════════════════════════════ */}
+      <div style={{ position:'relative', height:'100vh', overflow:'hidden', scrollSnapAlign:'start', flexShrink:0 }}>
           <Dragon tipX={tipPos.x} tipY={tipPos.y} />
           <section
             id="landing"
@@ -182,7 +179,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
                 fontFamily:   'Lato, sans-serif',
                 fontSize:     16,
                 color:        'var(--bg)',
-                background:   '#F5C645',
+                background:   'var(--text)',
                 cursor:       'pointer',
                 padding:      '10px 22px',
                 borderRadius: 9999,
@@ -281,11 +278,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
           </div>
         </section>
 
-        <div style={{ scrollSnapAlign:'start' }}>
-          <Footer />
-        </div>
-
-      </div>{/* end scroll-snap container */}
+        <Footer />
 
       {modal && <ImageModal src={modal.src} alt={modal.alt} title={modal.title} description={modal.description} onClose={() => setModal(null)} />}
     </>
