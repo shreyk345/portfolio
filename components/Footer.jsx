@@ -1,9 +1,9 @@
 export default function Footer() {
   const links = [
-    { href: 'https://linkedin.com/in/shreya-krishnamurthy', label: 'LinkedIn',  icon: '/images/linkedin.svg' },
-    { href: 'mailto:your@email.com',                        label: 'Email',     icon: '/images/gmail.svg'    },
-    { href: 'https://github.com/shreya',                    label: 'GitHub',    icon: '/images/github.svg'   },
-    { href: '/resume.pdf',                                  label: 'Resume',    icon: '/images/resume.svg', download: true },
+    { href: 'https://linkedin.com/in/shreya-krishnamurthy', label: 'LinkedIn', icon: '/images/linkedin.svg' },
+    { href: 'mailto:shkrishnamurthy@ucsd.edu',              label: 'Email',    icon: '/images/gmail.svg'    },
+    { href: 'https://github.com/shreyk345',                  label: 'GitHub',   icon: '/images/github.svg'   },
+    { href: '/resume.pdf',                                   label: 'Resume',   icon: '/images/resume.svg', download: true },
   ]
 
   return (

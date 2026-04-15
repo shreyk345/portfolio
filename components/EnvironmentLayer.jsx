@@ -10,11 +10,13 @@ const CLOUDS = [
 ]
 
 const STARS = Array.from({ length: 32 }, (_, i) => ({
-  top:   `${4  + (i * 31) % 88}%`,
-  left:  `${2  + (i * 47) % 92}%`,
-  dur:   `${8  + (i % 6)  * 2}s`,
-  delay: `-${(i * 1.9) % 12}s`,
-  size:  18 + (i % 4) * 10,   // 18–48px — small but punchy
+  top:          `${4  + (i * 31) % 88}%`,
+  left:         `${2  + (i * 47) % 92}%`,
+  spinDur:      `${8  + (i % 6)  * 2}s`,
+  spinDelay:    `-${(i * 1.9) % 12}s`,
+  twinkleDur:   `${2  + (i % 5) * 0.8}s`,   // 2s–5.2s cycle
+  twinkleDelay: `-${(i * 0.7) % 4}s`,        // stagger so they don't all flash together
+  size:         18 + (i % 4) * 10,
 }))
 
 // Single unified cloud path — drawn as one filled shape so there are no
@@ -82,11 +84,14 @@ export default function EnvironmentLayer() {
           ))
         : STARS.map((s, i) => (
             <span key={i} className="star-spin" style={{
-              position: 'absolute', top: s.top, left: s.left,
-              fontSize: s.size, color: '#eff0e9', opacity: 0.8,
-              animationDuration: s.dur, animationDelay: s.delay,
+              position:   'absolute', top: s.top, left: s.left,
+              fontSize:   s.size, color: '#eff0e9',
+              animationName:     'starSpin, starTwinkle',
+              animationDuration: `${s.spinDur}, ${s.twinkleDur}`,
+              animationDelay:    `${s.spinDelay}, ${s.twinkleDelay}`,
+              animationTimingFunction: 'linear, ease-in-out',
+              animationIterationCount: 'infinite, infinite',
               userSelect: 'none', display: 'inline-block', lineHeight: 1,
-              textShadow: '0 0 8px #eff0e9, 0 0 20px #eff0e9, 0 0 40px rgba(239,240,233,0.6)',
             }}>+</span>
           ))
       }

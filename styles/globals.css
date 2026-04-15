@@ -99,6 +99,14 @@ body {
   to   { transform: rotate(360deg); }
 }
 
+@keyframes starTwinkle {
+  0%   { opacity: 0.9; text-shadow: 0 0 8px #eff0e9, 0 0 20px #eff0e9, 0 0 40px rgba(239,240,233,0.6); }
+  25%  { opacity: 0.3; text-shadow: 0 0 2px #eff0e9; }
+  50%  { opacity: 0.8; text-shadow: 0 0 12px #eff0e9, 0 0 30px #eff0e9, 0 0 60px rgba(239,240,233,0.8); }
+  75%  { opacity: 0.2; text-shadow: 0 0 2px #eff0e9; }
+  100% { opacity: 0.9; text-shadow: 0 0 8px #eff0e9, 0 0 20px #eff0e9, 0 0 40px rgba(239,240,233,0.6); }
+}
+
 .star-spin {
   animation: starSpin linear infinite;
 }
