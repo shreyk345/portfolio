@@ -268,7 +268,7 @@ export default function Saturn() {
     function measure() {
       const section = ref.current?.closest('section')
       if (!section) return
-      setDims({ R: section.offsetHeight * 0.46 / 2 })
+      setDims({ R: section.offsetHeight * 0.65 / 2 })
     }
     measure()
     window.addEventListener('resize', measure)
