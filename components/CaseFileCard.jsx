@@ -54,9 +54,9 @@ export default function CaseFileCard({ title, description, thumbnail, slug, inde
             </div>
 
             {/* Thumbnail */}
-            <div style={{ margin:'10px 10px 8px 26px', height:120, background:fc.dark, borderRadius:3, overflow:'hidden', border:'2px solid #fffef0', outline:`1px solid ${fc.dark}`, boxShadow:'2px 2px 0 rgba(0,0,0,0.2)' }}>
+            <div style={{ margin:'10px 10px 8px 26px', height:160, background:fc.bg, borderRadius:3, overflow:'hidden' }}>
               {thumbnail
-                ? <img src={thumbnail} alt={title} style={{ width:'100%', height:'100%', objectFit:'cover' }} />
+                ? <img src={thumbnail} alt={title} style={{ width:'100%', height:'100%', objectFit:'contain' }} />
                 : <div style={{ width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', fontSize:9, color:'rgba(255,255,255,0.4)', fontFamily:'Lato, sans-serif' }}>[ photo ]</div>
               }
             </div>

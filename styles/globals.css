@@ -181,3 +181,51 @@ body {
     animation: none !important;
   }
 }
+
+/* ─── Case study body typography ─────────────────────────── */
+.case-study-body h1,
+.case-study-body h2,
+.case-study-body h3,
+.case-study-body h4 {
+  font-family: 'Reenie Beanie', cursive;
+  line-height: 1.1;
+  margin-top: 2.2em;
+  margin-bottom: 0.6em;
+  color: var(--text);
+}
+.case-study-body h1 { font-size: 3rem; }
+.case-study-body h2 { font-size: 2.4rem; }
+.case-study-body h3 { font-size: 2rem; }
+.case-study-body h4 { font-size: 1.6rem; }
+
+.case-study-body p  { margin-bottom: 1.4em; }
+
+.case-study-body ul,
+.case-study-body ol {
+  padding-left: 1.6em;
+  margin-bottom: 1.4em;
+}
+.case-study-body li { margin-bottom: 0.4em; }
+
+.case-study-body img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.6em 0;
+  display: block;
+}
+
+.case-study-body strong { font-weight: 700; }
+
+.case-study-body blockquote {
+  border-left: 4px solid #64CEBB;
+  padding-left: 1.2em;
+  margin: 1.6em 0;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.case-study-body hr {
+  border: none;
+  border-top: 1px solid rgba(128,128,128,0.2);
+  margin: 2.4em 0;
+}

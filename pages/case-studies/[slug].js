@@ -184,13 +184,9 @@ export default function CaseStudyPage({ caseStudy }) {
             </p>
           )}
         </div>
-        {caseStudy.thumbnail && (
-          <div style={{ width:'100%', maxHeight:480, overflow:'hidden' }}>
-            <img src={caseStudy.thumbnail} alt={caseStudy.title} style={{ width:'100%', objectFit:'cover', display:'block' }} />
-          </div>
-        )}
         <article
-          style={{ maxWidth:760, margin:'0 auto', padding:'60px 40px 80px', fontFamily:'Lato, sans-serif', fontSize:16, lineHeight:1.8, color:'var(--text)' }}
+          className="case-study-body"
+          style={{ maxWidth:760, margin:'0 auto', padding:'60px 40px 80px', fontFamily:'Lato, sans-serif', fontSize:18, lineHeight:1.9, color:'var(--text)' }}
           dangerouslySetInnerHTML={{ __html: caseStudy.contentHtml }}
         />
         <div style={{ textAlign:'center', paddingBottom:60 }}>

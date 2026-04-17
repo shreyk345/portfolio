@@ -5,7 +5,7 @@ date: "2024-03-15"
 tags: ["UX Research", "AR/VR", "Interaction Design"]
 thumbnail: "/images/projects/ar-nav-thumb.jpg"
 description: "Redesigning campus navigation using augmented reality overlays to reduce wayfinding anxiety for new students."
-featured: true
+featured: false
 ---
 
 ## Overview
@@ -39,3 +39,4 @@ The breadcrumb trail approach tested 40% better on task completion and rated hig
 ## Reflections
 
 This project taught me how physical context shapes digital interaction. The most technically capable solution (audio cues) was the least trusted — users needed visual confirmation.
+ 
