@@ -177,20 +177,21 @@ export default function Home({ featuredCaseStudies, playImages }) {
               style={{
                 fontFamily:   'Lato, sans-serif',
                 fontSize:     14,
-                color:        'white',
-                background:   '#64CEBB',
+                color:        '#64CEBB',
+                background:   'transparent',
                 cursor:       'pointer',
                 padding:      '8px 20px',
                 borderRadius: 9999,
                 display:      'inline-block',
                 fontWeight:   600,
                 letterSpacing: 0.3,
-                transition:   'opacity 0.2s, transform 0.2s',
+                border:       '2px solid #64CEBB',
+                transition:   'background 0.2s, color 0.2s',
               }}
               onClick={() => router.push('/case-studies')} role="link" tabIndex={0}
               onKeyDown={(e) => e.key==='Enter' && router.push('/case-studies')}
-              onMouseEnter={(e) => { e.currentTarget.style.opacity='0.82'; e.currentTarget.style.transform='scale(1.04)' }}
-              onMouseLeave={(e) => { e.currentTarget.style.opacity='1'; e.currentTarget.style.transform='scale(1)' }}
+              onMouseEnter={(e) => { e.currentTarget.style.background='#64CEBB'; e.currentTarget.style.color='white' }}
+              onMouseLeave={(e) => { e.currentTarget.style.background='transparent'; e.currentTarget.style.color='#64CEBB' }}
             >
               Explore all projects →
             </span>

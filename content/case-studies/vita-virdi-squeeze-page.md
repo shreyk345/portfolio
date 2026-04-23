@@ -1,11 +1,16 @@
 ---
 title: "Vita Virdi Squeeze Page"
 date: "2025-07-01"
-tags: ["UX Design", "Wellness Focused", "Conversion Optimisation"]
+tags: ["UX Design", "Conversion Optimisation", "Hi-Fi Design"]
 thumbnail: "/projects/vita-virdi/vita_virdi_thumb.png"
-description: "Designed two versions of a conversion focused squeeze page."
+description: "Designing a high-converting squeeze page for a wellness brand, iterating from stock-heavy imagery to bold, minimal contrast-driven design."
 featured: true
 protected: true
+problem: "Users were dropping off when moving from ads to general product pages, with no dedicated landing point to capture interest."
+solution: "Two developer-ready hi-fi squeeze page designs with stronger CTA hierarchy, better contrast, and a minimalist aesthetic."
+prototypeUrl: "https://www.figma.com/proto/7Tvpolej4DkvDCx36orDMI/Meal-Plantry-Wireframing?node-id=2003-287&t=4GYvCPCBnHcCGS6j-1"
+duration: "Four days"
+role: "UX Designer"
 ---
 
 ## Background
@@ -14,24 +19,16 @@ Vita Virdi, a wellness-focused brand, wanted to improve their conversion rates t
 
 This project took place in July 2025, over four days.
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; margin:2em 0">
-  <div>
-    <h2>Problem</h2>
-    <p>The marketing team identified a drop-off in user engagement when transitioning from ads and social media campaigns to general product pages. To solve this, the team proposed a squeeze page that would:
-    <ul style="padding-left:1.5em; margin:1em 0">
-  <li style="margin-bottom:0.4em"> 1. Capture user attention within the first few seconds</li>
-  <li style="margin-bottom:0.4em"> 2. Clearly communicate Vita Virdi's product and lifestyle value proposition</li>
-  <li style="margin-bottom:0.4em"> 3. Minimise distractions and friction during the conversion process</li></ul>
-</p>
-  </div>
-  <div>
-    <img src="/projects/vita-virdi/background_bottle.png" alt="Vita Virdi bottle" style="width:100%; border-radius:10px" />
-  </div>
-</div>
+## Problem
+
+The marketing team identified a drop-off in user engagement when transitioning from ads and social media campaigns to general product pages. To solve this, the team proposed a squeeze page that would:
+  1. Capture user attention within the first few seconds
+  2. Clearly communicate Vita Virdi's product and lifestyle value proposition
+  3. Minimise distractions and friction during the conversion process
 
 ## Solution
 
-I worked on creating two developer-ready designs that could be implemented quickly, while keeping the brand's vision in mind. **Version A** was meant to be deployed rapidly, while **Version B** kept initial criticisms and feedback in mind while implementing a site that highlighted more contrast. My iterations led to a page with clearer value proposition, stronger CTA hierarchy, and an overall more appealing experience.
+I worked on creating two developer-ready designs that could be implemented quickly, while keeping the brand's vision in mind. <u>Version A</u> was meant to be deployed rapidly, while <u>Version B</u> kept initial criticisms and feedback in mind while implementing a site that highlighted more contrast. My iterations led to a page with clearer value proposition, stronger CTA hierarchy, and an overall more appealing experience.
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:2em 0">
   <figure style="margin:0">
