@@ -5,20 +5,34 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import { getAllSlugs, getCaseStudy } from '../../lib/case-studies'
 
-const PASSWORD = '!ntern2o25'
 const ACCENT = ['#FE602F', '#64CEBB', '#E6C7EB', '#F5C645']
 
 // ── Password Gate ──────────────────────────────────────────
 function PasswordGate({ title, onUnlock }) {
-  const [value, setValue] = useState('')
-  const [error, setError] = useState(false)
-  const [shake, setShake] = useState(false)
+  const [value, setValue]   = useState('')
+  const [error, setError]   = useState(false)
+  const [shake, setShake]   = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  function attempt() {
-    if (value === PASSWORD) { onUnlock() }
-    else {
-      setError(true); setShake(true); setValue('')
-      setTimeout(() => setShake(false), 500)
+  async function attempt() {
+    if (!value) return
+    setLoading(true)
+    try {
+      const res = await fetch('/api/unlock', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ password: value }),
+      })
+      if (res.ok) {
+        onUnlock()
+      } else {
+        setError(true); setShake(true); setValue('')
+        setTimeout(() => setShake(false), 500)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -34,10 +48,10 @@ function PasswordGate({ title, onUnlock }) {
             <input type="password" value={value} onChange={(e) => { setValue(e.target.value); setError(false) }}
               onKeyDown={(e) => e.key==='Enter' && attempt()} placeholder="Password" autoFocus
               style={{ flex:1, padding:'12px 16px', borderRadius:10, border:`2px solid ${error ? '#FE602F' : 'rgba(128,128,128,0.3)'}`, background:'transparent', color:'var(--text)', fontFamily:'Lato, sans-serif', fontSize:16, outline:'none' }} />
-            <button onClick={attempt}
-              style={{ padding:'12px 24px', borderRadius:10, border:'none', background:'#64CEBB', color:'white', fontFamily:'Lato, sans-serif', fontSize:16, fontWeight:700, cursor:'pointer' }}
-              onMouseEnter={(e) => e.currentTarget.style.opacity='0.85'}
-              onMouseLeave={(e) => e.currentTarget.style.opacity='1'}>Enter</button>
+            <button onClick={attempt} disabled={loading}
+              style={{ padding:'12px 24px', borderRadius:10, border:'none', background:'#64CEBB', color:'white', fontFamily:'Lato, sans-serif', fontSize:16, fontWeight:700, cursor: loading ? 'wait' : 'pointer', opacity: loading ? 0.7 : 1 }}
+              onMouseEnter={(e) => { if (!loading) e.currentTarget.style.opacity='0.85' }}
+              onMouseLeave={(e) => { if (!loading) e.currentTarget.style.opacity='1' }}>{loading ? '...' : 'Enter'}</button>
           </div>
           {error && <p style={{ fontFamily:'Lato, sans-serif', fontSize:14, color:'#FE602F', marginTop:12 }}>Incorrect password. Try again.</p>}
           <div style={{ marginTop:40 }}>
