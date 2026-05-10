@@ -78,38 +78,49 @@ export default function Home({ featuredCaseStudies, playImages }) {
           >
             <EnvironmentLayer />
 
-            {/* Hero text — left-aligned */}
+            {/* Hero text — centered */}
             <div style={{
-              flex:     '1 1 300px',
-              position: 'relative',
-              zIndex:   2,
+              flex:      '1 1 300px',
+              position:  'relative',
+              zIndex:    2,
+              display:   'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
             }}>
+              <style>{`
+                @keyframes writeon {
+                  from { clip-path: inset(0 100% 0 0); }
+                  to   { clip-path: inset(0 0% 0 0); }
+                }
+                .writeon {
+                  display: inline-block;
+                  animation: writeon 1.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+                }
+                .writeon-delay {
+                  display: inline-block;
+                  animation: writeon 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+                }
+              `}</style>
               <h1 style={{ marginBottom: 0 }}>
-                {/* "Hi! I'm Shreya" on one line */}
-                <div style={{ whiteSpace: 'nowrap', lineHeight: 1.1 }}>
-                  <span style={{
-                    fontFamily: 'Lato, sans-serif',
-                    fontSize:   'clamp(20px, 2.6vw, 38px)',
-                    fontWeight: 400,
-                    color:      'var(--text)',
-                  }}>Hi! I'm </span>
-                  <span style={{
+                <div style={{ lineHeight: 1.05 }}>
+                  <span className="writeon" style={{
                     fontFamily: '"Reenie Beanie", cursive',
-                    fontSize:   'clamp(45px, 4.9vw, 70px)',
+                    fontSize:   'clamp(58px, 6.5vw, 90px)',
                     color:      '#64CEBB',
+                    display:    'block',
                   }}>Shreya</span>
                 </div>
-                {/* "Krishnamurthy." on second line, tight */}
-                <div style={{ lineHeight: 0.9 }}>
-                  <span style={{
+                <div style={{ lineHeight: 0.95 }}>
+                  <span className="writeon-delay" style={{
                     fontFamily: '"Reenie Beanie", cursive',
-                    fontSize:   'clamp(45px, 4.9vw, 70px)',
+                    fontSize:   'clamp(58px, 6.5vw, 90px)',
                     color:      '#64CEBB',
+                    display:    'block',
                   }}>Krishnamurthy.</span>
                 </div>
               </h1>
-              {/* Typewriter — minimal gap */}
-              <div style={{ marginTop: 4 }}>
+              {/* Typewriter */}
+              <div style={{ marginTop: 10 }}>
                 <Typewriter />
               </div>
             </div>
@@ -164,9 +175,9 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
           <h2 style={{ ...HEADING_STYLE, position:'relative', zIndex:2 }}>Work</h2>
 
-          <div style={{ display:'flex', gap:36, position:'relative', zIndex:2, alignItems:'flex-start', width:'75%' }}>
+          <div style={{ display:'flex', gap:16, position:'relative', zIndex:2, alignItems:'flex-start', width:'65%' }}>
             {featuredCaseStudies.map((cs, i) => (
-              <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0 }}>
+              <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0, maxWidth:'calc((65vw - 32px) / 3)', maxHeight:300, overflow:'hidden' }}>
                 <CaseFileCard {...cs} index={i} fullWidth />
               </div>
             ))}

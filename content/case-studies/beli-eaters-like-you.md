@@ -1,7 +1,7 @@
 ---
 title: "Beli Feature Introduction: Eaters Like You"
 date: "2025-07-01"
-tags: ["UX Research", "UX Resdesign", "Social Impact"]
+tags: ["UX Research", "UX Redesign", "Social Impact"]
 # thumbnail: "/projects/vita-virdi/vita_virdi_thumb.png"
 description: "Redesigning a food-review app (Beli) and introducing a new feature that helps accommodate users with dietary restrictions better."
 featured: false

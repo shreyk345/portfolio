@@ -187,16 +187,17 @@ body {
 .case-study-body h2,
 .case-study-body h3,
 .case-study-body h4 {
-  font-family: 'Reenie Beanie', cursive;
-  line-height: 1.1;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
   margin-top: 2.2em;
   margin-bottom: 0.6em;
-  color: var(--text);
+  color: #FE602F;
 }
-.case-study-body h1 { font-size: 3rem; }
-.case-study-body h2 { font-size: 2.4rem; }
-.case-study-body h3 { font-size: 2rem; }
-.case-study-body h4 { font-size: 1.6rem; }
+.case-study-body h1 { font-size: 2rem; }
+.case-study-body h2 { font-size: 1.6rem; }
+.case-study-body h3 { font-size: 1.3rem; }
+.case-study-body h4 { font-size: 1.1rem; }
 
 .case-study-body p  { margin-bottom: 1.4em; }
 

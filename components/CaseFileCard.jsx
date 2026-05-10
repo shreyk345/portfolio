@@ -63,8 +63,8 @@ export default function CaseFileCard({ title, description, thumbnail, slug, inde
 
             {/* Title + description */}
             <div style={{ padding:'0 10px 14px 26px' }}>
-              <h3 style={{ fontFamily:'"Reenie Beanie", cursive', fontSize:22, color:fc.text, marginBottom:6, lineHeight:1.2 }}>{title}</h3>
-              <p style={{ fontFamily:'Lato, sans-serif', fontSize:11, color:fc.text, lineHeight:1.6, opacity:0.85 }}>{description}</p>
+              <h3 style={{ fontFamily:'"Reenie Beanie", cursive', fontSize:28, color:fc.text, marginBottom:6, lineHeight:1.2 }}>{title}</h3>
+              <p style={{ fontFamily:'Lato, sans-serif', fontSize:13, color:fc.text, lineHeight:1.6, opacity:0.85 }}>{description}</p>
             </div>
           </div>
 

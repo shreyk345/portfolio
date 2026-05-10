@@ -130,7 +130,7 @@ export default function CaseStudyPage({ caseStudy }) {
     )
   }
 
-  const accentColor = ACCENT[caseStudy.tags.length % ACCENT.length]
+  const accentColor = ACCENT[caseStudy.slug.charCodeAt(0) % ACCENT.length]
 
   return (
     <>
