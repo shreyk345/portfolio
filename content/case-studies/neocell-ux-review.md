@@ -5,16 +5,12 @@ tags: ["UX Research"]
 # thumbnail: "/projects/bioluminescence/water1.avif"
 description: "Conducting a user-experience evaluation on an e-commerce website."
 featured: true
-protected: false
+protected: true
 problem: "Evaluate the user experience (UX) of NeoCell’s e-commerce website to understand how design choices influence user trust and friction in the purchase journey."
 solution: "A list of actionable design insights with potential business applications to help optimise conversion rates."
 prototypeUrl: "/projects/neocell/NeoCell_UX_Review.pdf"
 duration: "Four days"
 role: "UX Researcher"
-#previewImages:
- # - "/projects/bioluminescence/water2.avif"
- # - "/projects/bioluminescence/beach.avif"
- # - "/projects/bioluminescence/cave_entrance.avif"
 ---
 
 ## Background
