@@ -1,20 +1,19 @@
 export const runtime = 'edge'
 
-export default function handler(req, res) {
+export default async function handler(req) {
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' })
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 })
   }
 
-  const { password } = req.body
+  const { password } = await req.json()
 
   if (!password) {
-    return res.status(400).json({ error: 'Password required' })
+    return new Response(JSON.stringify({ error: 'Password required' }), { status: 400 })
   }
 
-  // Password lives only on the server — never sent to the browser
   if (password === process.env.CASE_STUDY_PASSWORD) {
-    return res.status(200).json({ success: true })
+    return new Response(JSON.stringify({ success: true }), { status: 200 })
   }
 
-  return res.status(401).json({ error: 'Incorrect password' })
+  return new Response(JSON.stringify({ error: 'Incorrect password' }), { status: 401 })
 }
