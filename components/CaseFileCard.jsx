@@ -35,7 +35,7 @@ export default function CaseFileCard({ title, description, thumbnail, slug, inde
 
         {/* Folder body */}
         <div style={{
-          position:'relative', width:'100%', aspectRatio:'3 / 4',
+          position:'relative', width:'100%', aspectRatio:'2 / 3',
           background:fc.bg, borderRadius:'6px',
           border:`2px solid ${fc.dark}`,
           overflow:'visible',

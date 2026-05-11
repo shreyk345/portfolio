@@ -142,7 +142,6 @@ export default function Home({ featuredCaseStudies, playImages }) {
           style={{
             ...SECTION_STYLE,
             position: 'relative',
-            overflow: 'hidden',
           }}>
 
           {/* Background accent dots */}
@@ -175,9 +174,9 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
           <h2 style={{ ...HEADING_STYLE, position:'relative', zIndex:2 }}>Work</h2>
 
-          <div style={{ display:'flex', gap:16, position:'relative', zIndex:2, alignItems:'flex-start', width:'65%' }}>
+          <div style={{ display:'flex', gap:32, position:'relative', zIndex:2, alignItems:'flex-start', width:'65%' }}>
             {featuredCaseStudies.map((cs, i) => (
-              <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0, maxWidth:'calc((65vw - 32px) / 3)', maxHeight:300, overflow:'hidden' }}>
+              <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0, maxWidth:'calc((65vw - 32px) / 3)' }}>
                 <CaseFileCard {...cs} index={i} fullWidth />
               </div>
             ))}

@@ -15,5 +15,5 @@ export default async function handler(req) {
     return new Response(JSON.stringify({ success: true }), { status: 200 })
   }
 
-  return new Response(JSON.stringify({ error: 'Incorrect password', debug: !!process.env.CASE_STUDY_PASSWORD }), { status: 401 })
+  return new Response(JSON.stringify({ error: 'Incorrect password' }), { status: 401 })
 }

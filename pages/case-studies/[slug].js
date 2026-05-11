@@ -185,21 +185,17 @@ export default function CaseStudyPage({ caseStudy }) {
             {caseStudy.duration && <><span style={{ fontSize:18, lineHeight:1 }}>·</span><span>{caseStudy.duration}</span></>}
             {caseStudy.role && <><span style={{ fontSize:18, lineHeight:1 }}>·</span><span>{caseStudy.role}</span></>}
           </p>
-          {/* Three preview image slots */}
-          <div className="cs-hero-imgs" style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:14 }}>
-            {[0,1,2].map((i) => {
-              const src = caseStudy.previewImages?.[i]
-              return (
-                <div key={i} onClick={() => src && setZoomImg({ src, alt:`Preview ${i+1}` })}
-                  style={{ height:200, borderRadius:10, overflow:'hidden', background:'rgba(255,255,255,0.15)', border:'1px solid rgba(255,255,255,0.2)', cursor: src ? 'zoom-in' : 'default' }}>
-                  {src
-                    ? <img src={src} alt={`Preview ${i+1}`} style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
-                    : <div style={{ width:'100%', height:'100%', display:'flex', alignItems:'center', justifyContent:'center', color:'rgba(255,255,255,0.35)', fontFamily:'Lato, sans-serif', fontSize:11 }}>[ preview {i+1} ]</div>
-                  }
+          {/* Three preview image slots — only if previewImages provided */}
+          {caseStudy.previewImages?.length > 0 && (
+            <div className="cs-hero-imgs" style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:14 }}>
+              {caseStudy.previewImages.slice(0,3).map((src, i) => (
+                <div key={i} onClick={() => setZoomImg({ src, alt:`Preview ${i+1}` })}
+                  style={{ height:200, borderRadius:10, overflow:'hidden', background:'rgba(255,255,255,0.15)', border:'1px solid rgba(255,255,255,0.2)', cursor:'zoom-in' }}>
+                  <img src={src} alt={`Preview ${i+1}`} style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
                 </div>
-              )
-            })}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* ── CONTENT ──────────────────────────────────────── */}

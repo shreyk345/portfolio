@@ -1,6 +1,6 @@
 ---
 title: "Vita Virdi Squeeze Page"
-date: "2025-07-01"
+date: "2025-06-17"
 tags: ["UX Design", "Conversion Optimisation", "Hi-Fi Design"]
 thumbnail: "/projects/vita-virdi/vita_virdi_thumb.png"
 description: "Designing a high-converting squeeze page for a wellness brand, iterating from stock-heavy imagery to bold, minimal contrast-driven design."
@@ -11,6 +11,10 @@ solution: "Two developer-ready hi-fi squeeze page designs with stronger CTA hier
 prototypeUrl: "https://www.figma.com/proto/7Tvpolej4DkvDCx36orDMI/Meal-Plantry-Wireframing?node-id=2003-287&t=4GYvCPCBnHcCGS6j-1"
 duration: "Four days"
 role: "UX Designer"
+previewImages:
+- "/projects/vita-virdi/preview_1.png"
+- "/projects/vita-virdi/preview_2.png"
+- "/projects/vita-virdi/solution_v2.png"
 ---
 
 ## Background
