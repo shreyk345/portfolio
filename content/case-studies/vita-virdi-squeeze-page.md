@@ -8,7 +8,6 @@ featured: true
 protected: true
 problem: "Users were dropping off when moving from ads to general product pages, with no dedicated landing point to capture interest."
 solution: "Two developer-ready hi-fi squeeze page designs with stronger CTA hierarchy, better contrast, and a minimalist aesthetic."
-prototypeUrl: "https://www.figma.com/proto/7Tvpolej4DkvDCx36orDMI/Meal-Plantry-Wireframing?node-id=2003-287&t=4GYvCPCBnHcCGS6j-1"
 duration: "Four days"
 role: "UX Designer"
 previewImages:

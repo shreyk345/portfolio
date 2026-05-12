@@ -2,7 +2,7 @@
 title: "NeoCell UX Research and Review"
 date: "2025-06-22"
 tags: ["UX Research"]
-# thumbnail: "/projects/bioluminescence/water1.avif"
+thumbnail: "/projects/neocell/Neocell_Logo.png"
 description: "Conducting a user-experience evaluation on an e-commerce website."
 featured: true
 protected: true

@@ -9,21 +9,19 @@ protected: false
 problem: "People with cultural, religious, or medical dietary restrictions who enjoy eating out want to feel confident and included in the restaurant discovery process, yet critical dietary information is consistently unavailable, or unreliable. Bridging this gap is essential because restaurant discovery is a deeply social experience, leaving people with dietary restrictions to navigate real social anxiety and exclusion when choosing safe restaurants."
 solution: "Introducting a new feature- Eaters Like You- and redesigning the onboarding, to optmise how users with dietary restrictions utilise the social discovery aspect of the app."
 # prototypeUrl: "https://www.figma.com/proto/7Tvpolej4DkvDCx36orDMI/Meal-Plantry-Wireframing?node-id=2003-287&t=4GYvCPCBnHcCGS6j-1"
-duration: "Two months"
+duration: "Ten Weeks"
 role: "UX Researcher and Designer"
 ---
 
 ## Overview
 
-Eating out is one of the most common ways people socialize, celebrate, and connect with others. For people with dietary restrictions, however, that same experience can become stressful, isolating, and mentally exhausting. Whether someone is navigating severe allergies, gluten intolerance, vegetarianism, or religious dietary restrictions, finding a restaurant often requires significantly more effort than simply choosing somewhere that looks good.
+Eating out is one of the most common ways people socialize, celebrate, and connect with others. For people with dietary restrictions, however, that same experience can become stressful, isolating, and mentally exhausting. When someone is navigating dietary restrictions, finding a restaurant often requires significantly more effort than simply choosing somewhere that looks good.
 
-While researching this space, we found that many users rely on a fragmented combination of apps, restaurant websites, social media posts, and online reviews just to feel confident choosing a place to eat. Even platforms built around restaurant discovery and recommendations, such as Beli, are primarily optimized for unrestricted eaters. Users with dietary restrictions are often left manually scanning menus, cross-referencing reviews, or searching for information outside the app entirely.
+Our team was especially interested in this problem because three out of four of our team members are vegetarians due to cultural backgrounds, and all of us have close relationships with people managing allergies, intolerances, or chronic dietary needs. Through our own experiences, we noticed that restaurant discovery for people with dietary restrictions is not only a logistical issue - it is also a social one, since many people with dietary restrictions feel uncomfortable suggesting restaurants in group settings or worry about being perceived as difficult.
 
-Our team was especially interested in this problem because three out of four of our team members are vegetarians due to cultural backgrounds, and all of us have close relationships with people managing allergies, intolerances, or chronic dietary needs. Through our own experiences, we noticed that restaurant discovery for people with dietary restrictions is not only a logistical issue — it is also a social one.
+While researching this space, we found that many people rely on a fragmented combination of apps, restaurant websites, social media posts, and online reviews just to feel confident choosing a place to eat. Even platforms built around restaurant discovery and recommendations, such as Beli, are primarily optimized for users without restrictions, leaving those with them to manually scan menus, cross-reference reviews, or search for information outside the app entirely.
 
-Many people with dietary restrictions feel uncomfortable suggesting restaurants in group settings or worry about being perceived as difficult. Some compromise by eating beforehand, choosing limited menu options, or avoiding certain social dining situations altogether. This disconnect became even more apparent during our interviews, where participants repeatedly described restaurant discovery as stressful, uncertain, and heavily dependent on trust.
-
-Rather than approaching this as a simple “add dietary filters” problem, we wanted to explore how restaurant discovery platforms could better support confidence, transparency, and community-driven trust for users with dietary restrictions. Since Beli already centers around social recommendations and shared food experiences, we saw an opportunity to rethink how dietary-aware restaurant discovery could feel more inclusive, personalized, and socially validating without separating users into a completely different experience.
+We wanted to explore how restaurant discovery platforms could better support confidence, transparency, and community-driven trust for users with dietary restrictions. Since Beli already centers around social recommendations and shared food experiences, we saw an opportunity to rethink how dietary-aware restaurant discovery could feel more inclusive, personalized, and socially validating without separating users into a completely different experience.
 
 Our project asks:
 > How might we help people with dietary restrictions feel more confident and included during the restaurant discovery process?
@@ -41,6 +39,8 @@ Because three members of our team personally belong to this user group, we enter
 
 Participants were asked to walk us through a realistic restaurant discovery task using the apps and tools they already rely on, including Beli, Google Maps, TikTok, Instagram, and other resources they find useful. During the task, participants searched for a restaurant in San Diego that would work both for their dietary restrictions and for a group dining setting.
 
+![Restaurant dicovery task](/projects/beli/discovery_task.png)
+
 We specifically focused on:
 
 - how users determine whether a restaurant feels safe or accommodating
@@ -51,6 +51,8 @@ We specifically focused on:
 As interviews progressed, we noticed that participants were not simply searching for restaurants — they were constantly trying to reduce uncertainty and confirm whether they could trust the information they were seeing.
 
 ## Research Findings
+
+![Research Findings Infographic](/projects/beli/research_findings.png)
 
 ### Users Constantly Cross-Referenced Multiple Platforms
 
