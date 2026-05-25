@@ -96,3 +96,75 @@ Sahana also struggled with the lack of allergen indicators on both restaurant me
 Participants repeatedly described how small gaps in information forced them into additional research, uncertainty, or compromise. In many cases, unclear labeling caused users to abandon restaurants entirely rather than risk choosing incorrectly.
 
 **Our Conclusion: Clear, visible dietary information was essential for confidence. Missing information immediately created distrust and hesitation.**
+
+## Our Redesigns
+
+### Onboarding- Designing for Nuanced Dietary Needs
+
+One of the first pain points we identified during user research was that dietary needs are rarely simple or represented by a single label. During research, participants frequently described needing much more specificity than existing apps allowed. One participant with gluten and dairy intolerance explained that even restaurants labeled “gluten-free friendly” still required additional investigation into ingredients and substitutions before she felt comfortable dining there. Participants also often described their restrictions as layered, personal, and difficult to communicate through existing restaurant discovery apps.
+
+To address this, we redesigned the dietary onboarding flow to support both broader lifestyle diets and ingredient-specific restrictions. Rather than treating dietary preferences as a single selection, we separated them into two systems:
+- **Lifestyle-based restrictions** tied to culture, ethics, religion, or long-term eating patterns (such as halal, kosher, vegan, vegetarian, gluten-free, or low FODMAP).
+- **Ingredient-level preferences** for allergies, intolerances, and highly specific avoidances.
+
+<figure style="margin:2em 0">
+  <img src="/projects/beli/onboarding_figure.png" alt="Onboarding Flow" style="width:100%; border-radius:10px"/>
+  <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Beli's Current Onboarding → Redesign Version 1 → Redesign Version 2</figcaption>
+</figure>
+
+We explored two onboarding directions. The first emphasized comprehensiveness by introducing separate tabs for lifestyles and ingredients upfront, allowing users to build a detailed dietary profile immediately. To reduce cognitive overload, selected restrictions appeared as removable chips at the top of the screen, giving users constant visibility into their choices while keeping the interaction lightweight and editable.
+
+The second direction focused on approachability and emotional tone. Instead of immediately presenting users with an extensive checklist, the flow prioritized broader lifestyle selection first, followed by ingredient-level customization afterward. We paired these options with rich food imagery to make onboarding feel less clinical and more aligned with the excitement and social enjoyment of discovering food. A searchable ingredient system also gave users flexibility to quickly add highly specific avoidances without scrolling through long lists.
+
+Across both directions, we intentionally maintained visual consistency with Beli’s existing design system by preserving the app’s color palette, interaction patterns, and lightweight interface language. Our goal was not to create a separate “dietary mode,” but to make dietary personalization feel naturally integrated into the core onboarding experience.
+
+### Eaters Like You- Building Trust Through Shared Dietary Experience
+
+One of the strongest insights from our research was that participants trusted recommendations from people with similar dietary restrictions significantly more than generic restaurant ratings or influencer content. Users repeatedly explained that shared dietary experiences created a stronger sense of confidence because those reviewers understood the same risks, limitations, and considerations they personally navigated.
+
+This insight became the foundation for a completely new feature we introduced called “Eaters Like You.”
+
+The feature reimagines restaurant discovery as a community-driven experience centered around dietary compatibility and trust. Instead of only discovering restaurants through general popularity or friend activity, users can now discover recommendations from people whose dietary needs closely align with their own.
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; margin:2em 0">
+
+  <figure style="margin:0">
+    <img src="/projects/beli/eaters_like_you_v1.png" alt="Eaters Like You Version One" style="width:100%; height:500px; object-fit:contain; border-radius:10px; display:block" />
+    <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Eaters Like You Version One</figcaption>
+  </figure>
+
+  <figure style="margin:0">
+    <video autoplay loop muted playsinline style="width:100%; height:500px; border-radius:10px; margin:1.6em 0">
+  <source src="/projects/beli/eaters_like_you_v2.mp4" type="video/mp4" />
+    </video>
+    <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Eaters Like You Version Two</figcaption>
+  </figure>
+
+</div>
+
+When entering the page, users are shown profiles of other eaters filtered by shared dietary restrictions and compatibility scores. Additional filters such as city, cuisine preferences, or specific restrictions allow users to narrow recommendations even further. The experience was designed to feel exploratory and social rather than transactional, encouraging users to discover both new restaurants and new people with similar dining experiences.
+
+We explored multiple ways of visualizing trust and compatibility throughout the interface. One direction emphasized dietary match scores, showing how closely another user’s dietary profile aligned with your own. Restaurants could then display multiple scores reflecting:
+- overall restaurant quality
+- dietary compatibility
+- and trust from users with similar restrictions
+
+Another direction focused more heavily on surfacing recommendations directly from similar users’ restaurant histories and saved lists. However, while testing the layout internally, we realized some users might misinterpret these restaurant cards as another user’s personal favorites rather than recommendations personalized for the current user. This became an important usability consideration moving forward.
+
+### Making Dietary Compatibility Visible
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; margin:2em 0">
+  <div>
+    <video autoplay loop muted playsinline style="width:100%; height:600px; border-radius:10px; margin:1.6em 0">
+  <source src="/projects/beli/user_profile.mp4" type="video/mp4" />
+  </video>
+  </div>
+  <div>
+
+  To support the new “Eaters Like You” ecosystem, we redesigned user profiles to make dietary compatibility more transparent and easier to evaluate at a glance.
+
+  At the top of the profile, we replaced the original “Taste Match” indicator with a Dietary Match score that reflects compatibility between two users’ dietary profiles. Restriction icons are also surfaced directly within the bio, allowing users to immediately recognize shared dietary experiences before deciding whether to follow someone.
+
+  Further down the profile, we introduced a dedicated “Your Dietary Match” section that breaks compatibility into more detailed categories. This section was designed to make trust more explainable and actionable. Instead of presenting compatibility as a vague percentage, users can understand why another person may be a valuable source of recommendations.
+  </div>
+</div>

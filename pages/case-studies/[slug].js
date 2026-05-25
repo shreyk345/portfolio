@@ -84,7 +84,7 @@ function SlideIn({ children, delay = 0 }) {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
   useEffect(() => {
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect() } }, { threshold: 0.1 })
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect() } }, { threshold: 0 })
     if (ref.current) obs.observe(ref.current)
     return () => obs.disconnect()
   }, [])
@@ -185,7 +185,7 @@ export default function CaseStudyPage({ caseStudy }) {
             {caseStudy.duration && <><span style={{ fontSize:18, lineHeight:1 }}>·</span><span>{caseStudy.duration}</span></>}
             {caseStudy.role && <><span style={{ fontSize:18, lineHeight:1 }}>·</span><span>{caseStudy.role}</span></>}
           </p>
-          {/* Three preview image slots — only if previewImages provided */}
+          {/* Preview images — only show if previewImages array provided */}
           {caseStudy.previewImages?.length > 0 && (
             <div className="cs-hero-imgs" style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:14 }}>
               {caseStudy.previewImages.slice(0,3).map((src, i) => (
