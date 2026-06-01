@@ -2,7 +2,7 @@
 title: "Apocabear Product Design"
 date: "2025-04-01"
 tags: ["UX Design", "UX Research", "Social Impact"]
-thumbnail: "/projects/apocabear/ap_mascot.png"
+thumbnail: "/projects/apocabear/thumbnail.png"
 description: "Communicating complicated risks in a changing fire landscape."
 featured: true
 protected: false

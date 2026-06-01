@@ -6,7 +6,7 @@ tags: ["UX Research", "UX Redesign", "Social Impact"]
 description: "Redesigning a food-review app (Beli) and introducing a new feature that helps accommodate users with dietary restrictions better."
 featured: false
 protected: false
-problem: "People with cultural, religious, or medical dietary restrictions who enjoy eating out want to feel confident and included in the restaurant discovery process, yet critical dietary information is consistently unavailable, or unreliable. Bridging this gap is essential because restaurant discovery is a deeply social experience, leaving people with dietary restrictions to navigate real social anxiety and exclusion when choosing safe restaurants."
+problem: "People with cultural or medical dietary restrictions who enjoy eating out want to feel included in the restaurant discovery process, yet critical dietary information is consistently unavailable, leaving people with dietary restrictions to navigate social anxiety and exclusion when choosing safe restaurants."
 solution: "Introducting a new feature- Eaters Like You- and redesigning the onboarding, to optmise how users with dietary restrictions utilise the social discovery aspect of the app."
 # prototypeUrl: "https://www.figma.com/proto/7Tvpolej4DkvDCx36orDMI/Meal-Plantry-Wireframing?node-id=2003-287&t=4GYvCPCBnHcCGS6j-1"
 duration: "Ten Weeks"
@@ -126,20 +126,15 @@ This insight became the foundation for a completely new feature we introduced ca
 
 The feature reimagines restaurant discovery as a community-driven experience centered around dietary compatibility and trust. Instead of only discovering restaurants through general popularity or friend activity, users can now discover recommendations from people whose dietary needs closely align with their own.
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; margin:2em 0">
-
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:2em 0">
   <figure style="margin:0">
     <img src="/projects/beli/eaters_like_you_v1.png" alt="Eaters Like You Version One" style="width:100%; height:500px; object-fit:contain; border-radius:10px; display:block" />
     <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Eaters Like You Version One</figcaption>
   </figure>
-
   <figure style="margin:0">
-    <video autoplay loop muted playsinline style="width:100%; height:500px; border-radius:10px; margin:1.6em 0">
-  <source src="/projects/beli/eaters_like_you_v2.mp4" type="video/mp4" />
-    </video>
+    <img src="/projects/beli/eaters_like_you_v2.png" alt="Eaters Like You Version Two" style="width:100%; height:500px; object-fit:contain; border-radius:10px; display:block" />
     <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Eaters Like You Version Two</figcaption>
   </figure>
-
 </div>
 
 When entering the page, users are shown profiles of other eaters filtered by shared dietary restrictions and compatibility scores. Additional filters such as city, cuisine preferences, or specific restrictions allow users to narrow recommendations even further. The experience was designed to feel exploratory and social rather than transactional, encouraging users to discover both new restaurants and new people with similar dining experiences.
@@ -168,3 +163,66 @@ Another direction focused more heavily on surfacing recommendations directly fro
   Further down the profile, we introduced a dedicated “Your Dietary Match” section that breaks compatibility into more detailed categories. This section was designed to make trust more explainable and actionable. Instead of presenting compatibility as a vague percentage, users can understand why another person may be a valuable source of recommendations.
   </div>
 </div>
+
+## User Testing & Iteration
+
+After developing two high-fidelity design directions, we returned to the same participants from our initial research phase to evaluate how well our solutions addressed the challenges they had previously described. Since these participants had already shared their experiences navigating dietary restrictions, they were positioned to tell us whether our designs genuinely improved the restaurant discovery process or introduced new complexity.
+
+Participants reviewed both versions of our redesigned onboarding flow, the new "Eaters Like You" experience, and the redesigned user profile pages. We encouraged them to think aloud as they interacted with the prototypes and explain what felt intuitive, confusing, useful, or unnecessary.
+
+Rather than determining a single "winning" prototype, our goal was to understand which design decisions best supported confidence, trust, and ease of use during restaurant discovery.
+
+<figure style="margin:2em 0">
+  <img src="/projects/beli/redefining_user_flows.png" alt="Redefining User Flow" style="width:100%; border-radius:10px"/>
+  <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left"> Redefining our user flow </figcaption>
+</figure>
+
+One of the clearest findings from testing was that users valued simplicity during onboarding. While participants appreciated the flexibility and personalization offered by both versions, they consistently gravitated toward the cleaner, more minimalist structure of Version 1.
+
+Participants described Version 1's onboarding as easier to scan, less visually overwhelming, and more efficient for completing a setup task. Two users specifically appreciated being able to view more dietary options at once rather than navigating through large image cards or multiple screens.
+
+At the same time, participants also highlighted opportunities to improve clarity. The term "Lifestyles" was initially confusing for one user, who was unsure whether it referred to cultural diets, medical diets, ethical diets, or something else entirely. Others felt that the selected restriction icons shown during onboarding would be easier to understand if they included written labels alongside the icons.
+
+These comments reinforced an important lesson: 
+> While dietary restrictions can be highly nuanced, users still want the process of communicating those restrictions to feel quick and effortless.
+
+The strongest feedback emerged around the new "Eaters Like You" feature. Across all participants, Version 2 was consistently preferred because it focused on helping users discover restaurants first rather than asking them to discover other users. Participants felt this aligned more closely with their actual goals when opening Beli.
+
+One participant explained that they would be far more likely to use the feature if restaurant recommendations were immediately visible alongside reviews from users with similar dietary restrictions. Another suggested displaying how many similar eaters had reviewed a restaurant because the volume of matching reviews would increase trust and credibility.
+
+This feedback contributed to one of our core research findings: users care less about finding strangers online and more about finding restaurants they can confidently eat at. 
+> Shared dietary experiences only become valuable when they directly help users make dining decisions.
+
+Our final direction thus became clear:
+
+> Create the fastest and most understandable way for users to communicate their dietary needs, then use those preferences to surface trustworthy restaurant recommendations from people with similar dietary experiences.
+
+## Final Designs
+
+### Onboarding
+
+Since our tests revealed that users preferred a simple checklist onboarding process, we updated our flow to better fit this process- rather than using simply a toggle to input both lifestyle and ingredient restrictions, we adapted it into a process that takes users' through both, ensuring that they do not accidentally miss inputting important information. Based on feedback, we also added a confirmation screen that displays selected restrictions using both icons and written labels, making profiles easier to review and reducing ambiguity.
+
+<figure style="margin:2em 0">
+  <img src="/projects/beli/onboarding_before_after.png" alt="Onboarding before-and-after" style="width:100%; border-radius:10px"/>
+  <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left"> Onboarding before-and-after </figcaption>
+</figure>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center; margin:2em 0">
+  <div>
+    <img src="/projects/beli/toggles.png" alt="Toggles" style="width:100%; border-radius:10px" />
+  </div>
+  <div>
+    <p>We also spent quite a bit of time debating the best way to display our Lifestyle/Ingredient toggle, keeping in mind that it would need to be a feature that looked both a part of the onboarding process, as well as an interactive element that users could actively switch between. While our original version had pill icons, one users mentioned it could be a little confusing (especially for older users) who wouldn't necessarily think to toggle between the two. We explored versions that incorporated numbered labels ("1. Lifestyles" and "2. Ingredients"), which more clearly communicated that users were expected to complete both sections as part of the onboarding process. We also experimented with connected step indicators, borrowing a pattern seen in many multi-step forms.</p>
+    <p>In the end, we ended up using a simple numbered label to convey the steps of the process, while retaining the color differences to help more tech-savvy users understand that the toggle was interactive. </p>
+  </div>
+</div>
+
+### Eaters Like You
+
+Since Eaters Like You was a whole new feature, our test users did not have many bases of comparison to offer us exhaustive insight on improvements. So, we honed in on really improving the specifics of our Eaters Like You feed. Based on user inputs, we increased the size of our dietary restriction icons in user descriptions, and also highlighted keywords in each of their reviews so they were more salient on quick glances.
+
+<figure style="margin:2em 0">
+  <img src="/projects/beli/ely_before_after.png" alt="Eaters Like You before-and-after" style="width:100%; border-radius:10px"/>
+  <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left"> Eaters Like You before-and-after </figcaption>
+</figure>

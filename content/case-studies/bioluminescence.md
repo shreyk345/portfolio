@@ -2,7 +2,7 @@
 title: "Bioluminescence"
 date: "2025-04-01"
 tags: ["Worldbuilding", "VR/XR", "Level Design"]
-thumbnail: "/projects/bioluminescence/water1.avif"
+thumbnail: "/projects/bioluminescence/thumbnail.png"
 description: "Building a virtual reality environment on Unity, optimised for MetaQuest."
 featured: false
 protected: false

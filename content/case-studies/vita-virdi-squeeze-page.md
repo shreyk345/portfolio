@@ -2,7 +2,7 @@
 title: "Vita Virdi Squeeze Page"
 date: "2025-06-17"
 tags: ["UX Design", "Conversion Optimisation", "Hi-Fi Design"]
-thumbnail: "/projects/vita-virdi/vita_virdi_thumb.png"
+thumbnail: "/projects/vita-virdi/vita_virdi_thumbnail.png"
 description: "Designing a high-converting squeeze page for a wellness brand, iterating from stock-heavy imagery to bold, minimal contrast-driven design."
 featured: true
 protected: true
