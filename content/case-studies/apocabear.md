@@ -4,7 +4,7 @@ date: "2025-04-01"
 tags: ["UX Design", "UX Research", "Social Impact"]
 thumbnail: "/projects/apocabear/thumbnail.png"
 description: "Communicating complicated risks in a changing fire landscape."
-featured: true
+featured: false
 protected: false
 problem: "How might we help elderly and immigrant communities plan for and prepare better for emergency situations like evacuations during wildfires?"
 solution: "A mobile app that aggregates data to predict wildfire probability, guides users through creating a Plan of Action, and provides real-time evacuation alerts, in conjunction with a public campaign specifically dedicated to leveraging the radio as a mode to reach target audience members who may have been unaware of our app."

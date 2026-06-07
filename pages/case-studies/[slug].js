@@ -191,7 +191,7 @@ export default function CaseStudyPage({ caseStudy }) {
               {caseStudy.previewImages.slice(0,3).map((src, i) => (
                 <div key={i} onClick={() => setZoomImg({ src, alt:`Preview ${i+1}` })}
                   style={{ height:200, borderRadius:10, overflow:'hidden', background:'rgba(255,255,255,0.15)', border:'1px solid rgba(255,255,255,0.2)', cursor:'zoom-in' }}>
-                  <img src={src} alt={`Preview ${i+1}`} style={{ width:'100%', height:'100%', objectFit:'cover', display:'block' }} />
+                  <img src={src} alt={`Preview ${i+1}`} style={{ width:'100%', height:'100%', objectFit:'contain', display:'block' }} />
                 </div>
               ))}
             </div>

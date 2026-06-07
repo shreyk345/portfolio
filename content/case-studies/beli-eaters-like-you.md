@@ -1,23 +1,27 @@
 ---
-title: "Beli Feature Introduction: Eaters Like You"
-date: "2025-07-01"
+title: "Beli Feature Intro: Eaters Like You"
+date: "2026-07-01"
 tags: ["UX Research", "UX Redesign", "Social Impact"]
-# thumbnail: "/projects/vita-virdi/vita_virdi_thumb.png"
-description: "Redesigning a food-review app (Beli) and introducing a new feature that helps accommodate users with dietary restrictions better."
-featured: false
+thumbnail: "/projects/beli/beli_thumbnail.png"
+description: "Redesigning a food-review app by introducing a new feature that accomodates users with dietary restrictions better."
+featured: true
 protected: false
 problem: "People with cultural or medical dietary restrictions who enjoy eating out want to feel included in the restaurant discovery process, yet critical dietary information is consistently unavailable, leaving people with dietary restrictions to navigate social anxiety and exclusion when choosing safe restaurants."
 solution: "Introducting a new feature- Eaters Like You- and redesigning the onboarding, to optmise how users with dietary restrictions utilise the social discovery aspect of the app."
-# prototypeUrl: "https://www.figma.com/proto/7Tvpolej4DkvDCx36orDMI/Meal-Plantry-Wireframing?node-id=2003-287&t=4GYvCPCBnHcCGS6j-1"
+prototypeUrl: "https://www.figma.com/proto/JDZJoi1HqERbmshMni5KxY/COGS-127-Beli-Redesign?node-id=445-1131&t=8zTkAcWyJxaObZGJ-1"
 duration: "Ten Weeks"
 role: "UX Researcher and Designer"
+previewImages:
+- "/projects/beli/research_findings.png"
+- "/projects/beli/thumb2.png"
+- "/projects/beli/ely_v1v2.png"
 ---
 
-## Overview
+# Overview
 
 Eating out is one of the most common ways people socialize, celebrate, and connect with others. For people with dietary restrictions, however, that same experience can become stressful, isolating, and mentally exhausting. When someone is navigating dietary restrictions, finding a restaurant often requires significantly more effort than simply choosing somewhere that looks good.
 
-Our team was especially interested in this problem because three out of four of our team members are vegetarians due to cultural backgrounds, and all of us have close relationships with people managing allergies, intolerances, or chronic dietary needs. Through our own experiences, we noticed that restaurant discovery for people with dietary restrictions is not only a logistical issue - it is also a social one, since many people with dietary restrictions feel uncomfortable suggesting restaurants in group settings or worry about being perceived as difficult.
+My team- **Zoe Kothari, Kalyani Joshi, and Sonakshi Mohanty**- was especially interested in this problem because three out of four of our team members are vegetarians due to cultural backgrounds, and all of us have close relationships with people managing allergies, intolerances, or chronic dietary needs. Through our own experiences, we noticed that restaurant discovery for people with dietary restrictions is not only a logistical issue - it is also a social one, since many people with dietary restrictions feel uncomfortable suggesting restaurants in group settings or worry about being perceived as difficult.
 
 While researching this space, we found that many people rely on a fragmented combination of apps, restaurant websites, social media posts, and online reviews just to feel confident choosing a place to eat. Even platforms built around restaurant discovery and recommendations, such as Beli, are primarily optimized for users without restrictions, leaving those with them to manually scan menus, cross-reference reviews, or search for information outside the app entirely.
 
@@ -26,7 +30,7 @@ We wanted to explore how restaurant discovery platforms could better support con
 Our project asks:
 > How might we help people with dietary restrictions feel more confident and included during the restaurant discovery process?
 
-## User Research
+# User Research
 
 To better understand how people with dietary restrictions currently discover restaurants, we conducted semi-structured interviews with participants managing a range of dietary needs, including severe allergies, gluten and dairy intolerances, halal dietary restrictions, and vegetarian diets.
 
@@ -50,7 +54,7 @@ We specifically focused on:
 
 As interviews progressed, we noticed that participants were not simply searching for restaurants — they were constantly trying to reduce uncertainty and confirm whether they could trust the information they were seeing.
 
-## Research Findings
+# Research Findings
 
 ![Research Findings Infographic](/projects/beli/research_findings.png)
 
@@ -97,7 +101,7 @@ Participants repeatedly described how small gaps in information forced them into
 
 **Our Conclusion: Clear, visible dietary information was essential for confidence. Missing information immediately created distrust and hesitation.**
 
-## Our Redesigns
+# Our Redesigns
 
 ### Onboarding- Designing for Nuanced Dietary Needs
 
@@ -126,16 +130,10 @@ This insight became the foundation for a completely new feature we introduced ca
 
 The feature reimagines restaurant discovery as a community-driven experience centered around dietary compatibility and trust. Instead of only discovering restaurants through general popularity or friend activity, users can now discover recommendations from people whose dietary needs closely align with their own.
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:2em 0">
-  <figure style="margin:0">
-    <img src="/projects/beli/eaters_like_you_v1.png" alt="Eaters Like You Version One" style="width:100%; height:500px; object-fit:contain; border-radius:10px; display:block" />
-    <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Eaters Like You Version One</figcaption>
-  </figure>
-  <figure style="margin:0">
-    <img src="/projects/beli/eaters_like_you_v2.png" alt="Eaters Like You Version Two" style="width:100%; height:500px; object-fit:contain; border-radius:10px; display:block" />
-    <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left">Eaters Like You Version Two</figcaption>
-  </figure>
-</div>
+<figure style="margin:2em 0">
+  <img src="/projects/beli/ely_v1v2.png" alt="Onboarding Flow" style="width:100%; border-radius:10px"/>
+  <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left"> Eaters Like You Version 1 and 2 </figcaption>
+</figure>
 
 When entering the page, users are shown profiles of other eaters filtered by shared dietary restrictions and compatibility scores. Additional filters such as city, cuisine preferences, or specific restrictions allow users to narrow recommendations even further. The experience was designed to feel exploratory and social rather than transactional, encouraging users to discover both new restaurants and new people with similar dining experiences.
 
@@ -164,7 +162,7 @@ Another direction focused more heavily on surfacing recommendations directly fro
   </div>
 </div>
 
-## User Testing & Iteration
+# User Testing & Iteration
 
 After developing two high-fidelity design directions, we returned to the same participants from our initial research phase to evaluate how well our solutions addressed the challenges they had previously described. Since these participants had already shared their experiences navigating dietary restrictions, they were positioned to tell us whether our designs genuinely improved the restaurant discovery process or introduced new complexity.
 
@@ -197,7 +195,7 @@ Our final direction thus became clear:
 
 > Create the fastest and most understandable way for users to communicate their dietary needs, then use those preferences to surface trustworthy restaurant recommendations from people with similar dietary experiences.
 
-## Final Designs
+# Final Designs
 
 ### Onboarding
 
@@ -226,3 +224,19 @@ Since Eaters Like You was a whole new feature, our test users did not have many 
   <img src="/projects/beli/ely_before_after.png" alt="Eaters Like You before-and-after" style="width:100%; border-radius:10px"/>
   <figcaption style="font-size:14px; opacity:0.6; margin-top:8px; text-align:left"> Eaters Like You before-and-after </figcaption>
 </figure>
+
+# Reflection
+
+This project changed how I think about accessibility and inclusion in product design.
+
+When we began, I assumed the primary challenge would be helping users find dietary information more efficiently. I expected our solution to focus on filters, labels, and restaurant data. While those elements were important, our research revealed that the real problem was much more human. Participants were not simply looking for food they could eat; they were looking for confidence and reassurance in the discovery process to ensure they wouldn't feel excluded while finding places to eat at.
+
+One of the most surprising insights was how much trust mattered. Several participants explained that they trusted recommendations from people with similar dietary restrictions more than general restaurant ratings or even recommendations from friends without those restrictions. This shifted my perspective on the role of community in product design. Rather than treating dietary accommodations as an isolated feature, we began thinking about how trust could be designed into the discovery process itself.
+
+The project also taught me the importance of balancing comprehensiveness with simplicity. Throughout the design process, we continually debated how much information users should provide and how much information we should surface. User testing reinforced that even when users have complex dietary needs, they still want interactions to feel fast, intuitive, and lightweight. Some of our most ambitious ideas  became simpler because participants consistently valued clarity over complexity.
+
+Working within an existing product ecosystem was another valuable challenge. Because we were extending Beli rather than creating a new platform from scratch, every design decision required us to balance our own innovations with design consistency. We had to consider how new features would fit within Beli’s visual language, interaction patterns, and overall product goals. This pushed me to think beyond individual screens and consider how design decisions contribute to a larger product experience.
+
+Most importantly, this project reminded me that accessibility is not only about accommodating edge cases. Many of the challenges our participants described affected where they could socialize, how they interacted with friends, and whether they felt comfortable participating in shared experiences. Designing for these users was not just about helping them avoid certain foods, but helping them feel included.
+
+Ultimately, this project reinforced a lesson I hope to carry into future work: the most impactful design opportunities often emerge when we look beyond functional problems and understand the emotional experiences underneath them.
