@@ -174,7 +174,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
           <h2 style={{ ...HEADING_STYLE, position:'relative', zIndex:2 }}>Work</h2>
 
-          <div style={{ display:'flex', gap:32, position:'relative', zIndex:2, alignItems:'flex-start', width:'65%' }}>
+          <div style={{ display:'flex', gap:16, position:'relative', zIndex:2, alignItems:'flex-start', width:'65%' }}>
             {featuredCaseStudies.map((cs, i) => (
               <div key={cs.slug} style={{ flex:'1 1 0', minWidth:0, maxWidth:'calc((65vw - 32px) / 3)' }}>
                 <CaseFileCard {...cs} index={i} fullWidth />
@@ -248,8 +248,14 @@ export default function Home({ featuredCaseStudies, playImages }) {
                       aria-label={`View ${img.alt}`} onKeyDown={(e) => e.key==='Enter' && setModal(img)}
                       style={{ borderRadius:8, overflow:'hidden', background:bg[i%9], cursor:'pointer' }}>
                       {img.src
-                        ? <img src={img.src} alt={img.alt} style={{ width:'100%', display:'block', objectFit:'cover' }}
-                            onError={(e) => { e.target.style.display='none' }} />
+                        ? (img.isVideo
+                            ? <video src={img.src} muted loop playsInline
+                                onMouseEnter={(e) => e.target.play()}
+                                onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0 }}
+                                style={{ width:'100%', display:'block', objectFit:'cover' }} />
+                            : <img src={img.src} alt={img.alt} style={{ width:'100%', display:'block', objectFit:'cover' }}
+                                onError={(e) => { e.target.style.display='none' }} />
+                          )
                         : <div style={{ height:140, display:'flex', alignItems:'center', justifyContent:'center',
                             fontSize:11, color:'rgba(255,255,255,0.35)', fontFamily:'Lato, sans-serif' }}>[ {img.alt} ]</div>
                       }
@@ -290,7 +296,7 @@ export default function Home({ featuredCaseStudies, playImages }) {
 
         <Footer />
 
-      {modal && <ImageModal src={modal.src} alt={modal.alt} title={modal.title} description={modal.description} onClose={() => setModal(null)} />}
+      {modal && <ImageModal src={modal.src} alt={modal.alt} title={modal.title} description={modal.description} isVideo={modal.isVideo} onClose={() => setModal(null)} />}
     </>
   )
 }

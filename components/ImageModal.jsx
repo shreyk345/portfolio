@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-export default function ImageModal({ src, alt, title, description, onClose }) {
+export default function ImageModal({ src, alt, title, description, isVideo, onClose }) {
   const closeRef  = useRef(null)
   const [visible, setVisible] = useState(false)
 
@@ -72,23 +72,39 @@ export default function ImageModal({ src, alt, title, description, onClose }) {
           transition:      'opacity 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
         }}
       >
-        <img
-          src={src}
-          alt={alt}
-          style={{
-            maxWidth:    '58vw',
-            maxHeight:   '82vh',
-            borderRadius: 14,
-            objectFit:   'contain',
-            boxShadow:   '0 8px 60px rgba(0,0,0,0.5)',
-            flexShrink:   0,
-          }}
-        />
+        {isVideo
+          ? <video
+              src={src}
+              controls
+              autoPlay
+              loop
+              style={{
+                maxWidth:    '58vw',
+                maxHeight:   '82vh',
+                borderRadius: 14,
+                objectFit:   'contain',
+                boxShadow:   '0 8px 60px rgba(0,0,0,0.5)',
+                flexShrink:   0,
+              }}
+            />
+          : <img
+              src={src}
+              alt={alt}
+              style={{
+                maxWidth:    '58vw',
+                maxHeight:   '82vh',
+                borderRadius: 14,
+                objectFit:   'contain',
+                boxShadow:   '0 8px 60px rgba(0,0,0,0.5)',
+                flexShrink:   0,
+              }}
+            />
+        }
 
         <div style={{ flex: 1, minWidth: 220, maxWidth: 360 }}>
           <h2 style={{
             fontFamily:   '"Reenie Beanie", cursive',
-            fontSize:      50,
+            fontSize:      56,
             color:         'white',
             marginBottom:  20,
             lineHeight:    1.05,
@@ -98,7 +114,7 @@ export default function ImageModal({ src, alt, title, description, onClose }) {
           {description && (
             <p style={{
               fontFamily: 'Lato, sans-serif',
-              fontSize:    18,
+              fontSize:    22,
               lineHeight:  1.75,
               color:      'rgba(255,255,255,0.80)',
               margin:      0,
